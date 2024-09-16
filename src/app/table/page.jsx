@@ -1,8 +1,11 @@
+"use client"
 import React from 'react'
+import Datatable from '@/component/datatable/datatable'
+
 const page = () => {
   return (
     <>
-    Home Page
+      <Datatable/>
     </>
   )
 }

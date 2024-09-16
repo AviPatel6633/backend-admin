@@ -1,15 +1,20 @@
-'use client'
-import React from 'react'
-import Header from './header'
-import { usePathname } from 'next/navigation'
+'use client';
+import React from 'react';
+import HeaderMain from './header';
+import { usePathname } from 'next/navigation';
 
-const HeaderExport = () => {
-  const  pathname = usePathname();
+const HeaderExport = ({ children }) => {
+  const pathname = usePathname();
+
   return (
-    <div>
-        {pathname == '/login' ? ('') : (<Header/>)}
-    </div>
-  )
-}
+    <>
+      {pathname === '/login' ? (
+        children
+      ) : (
+        <HeaderMain content={children} />
+      )}
+    </>
+  );
+};
 
-export default HeaderExport
+export default HeaderExport;
