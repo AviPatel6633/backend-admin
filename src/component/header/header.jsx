@@ -7,8 +7,7 @@ import { Button, Layout, Menu, theme } from 'antd';
 
 const { Header, Sider, Content } = Layout;
 
-// Sidebar Menu'
-
+// Sidebar Menu Start
 const sidebarMenuItems = [
   {
     key: 'sub1',
@@ -71,7 +70,7 @@ const sidebarMenuItems = [
     ],
   },
 ];
-
+// Sidebar Menu End
 
 const HeaderMain = (props) => {
   const [collapsed, setCollapsed] = useState(false);
@@ -83,30 +82,18 @@ const HeaderMain = (props) => {
   return (
     <Layout style={{ minHeight: '100vh' }}>
       <Layout>
-        <Header
-           style={{
-            display: 'flex',
-            alignItems: 'center',
-            padding: '0 16px',
-            height: '64px', 
-            lineHeight: '64px', 
-          }}
-
-        >
-          <Link className="header-logo" href='/'>
-            Dashboard
-          </Link>
-          <Button
-            type="text"
-            icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-            onClick={() => setCollapsed(!collapsed)}
-            style={{
-              fontSize: '16px',
-              width: 64,
-              height: 64,
-              color: "#fff",
-            }}
-          />
+        <Header className='header-main' >
+          <div className='logo-box'>
+            <Link className="header-logo" href='/'>
+              Dashboard
+            </Link>
+            <Button
+              type="text"
+              icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+              onClick={() => setCollapsed(!collapsed)}
+              className='sidebar-btn'
+            />
+          </div>
         </Header>
         <Layout>
           <Sider trigger={null} collapsible collapsed={collapsed}>
