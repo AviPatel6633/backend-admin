@@ -4,17 +4,18 @@
     padding: 0 ;
     height: 64px;
     line-height: 64px;
+    background-color: #001529;
 }
 .header-main .logo-box{
     position: relative;
     padding: 0 12px;
     background: #001529;
-    border-right: 1px solid #ffffff3b;
+    border-right: 1px solid #eeeeee54 !important;
 }
 .header-main .logo-box .sidebar-btn{
     font-size: 16px;
     margin-left: 15px;
-    color: #fff;
+    color: #0958d9 !important;
 }
 .header-main .logo-box  .sidebar-btn span{
     font-size: 20px;
@@ -25,5 +26,5 @@
     font-weight: 600;
     font-size: 26px;
     line-height: 26px;
-    color: #0a58ca;
+    color: #0958d9;
 }
