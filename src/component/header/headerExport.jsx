@@ -8,7 +8,7 @@ const HeaderExport = ({ children }) => {
 
   return (
     <>
-      {pathname === '/login' ? (
+      {pathname === '/' ? (
         children
       ) : (
         <HeaderMain content={children} />

@@ -2,14 +2,14 @@ import React from 'react'
 import { Button, Layout, Menu, theme } from 'antd';
 import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
 import Link from 'next/link';
-
+import './header.css';
 // Sidebar Menu Start
 const sidebarMenuItems = [
     {
       key: 'sub1',
       icon: <MailOutlined />,
       label: (
-        <Link href="/table">
+        <Link href="/dashboard/table">
           Table
         </Link>
       ),
@@ -18,7 +18,7 @@ const sidebarMenuItems = [
       key: 'sub2',
       icon: <AppstoreOutlined />,
       label: (
-        <Link href="/navigation-two">
+        <Link href="/dashboard/navigation-two">
           Navigation Two
         </Link>
       ),
@@ -76,6 +76,7 @@ const SidebarMenu = () => {
               mode="inline"
               defaultSelectedKeys={['1']}
               items={sidebarMenuItems}
+              className='main-sidebar-menu'
             />
     </div>
   )

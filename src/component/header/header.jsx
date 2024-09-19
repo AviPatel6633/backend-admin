@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './header.css'
 import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
+import { VscAccount } from "react-icons/vsc";
 
 import Link from 'next/link';
 import { Button, Layout, Menu, theme } from 'antd';
@@ -19,7 +20,7 @@ const HeaderMain = (props) => {
       <Layout>
         <Header className='header-main' >
           <div className='logo-box'>
-            <Link className="header-logo" href='/'>
+            <Link className="header-logo" href='/dashboard'>
               Dashboard
             </Link>
             <Button
@@ -29,18 +30,25 @@ const HeaderMain = (props) => {
               className='sidebar-btn'
             />
           </div>
+          <div className='header-user-detail w-100'>
+            <div><h1>Welcome <span>User</span></h1></div>
+            <div>
+              <VscAccount />
+            </div>
+          </div>
         </Header>
         <Layout>
-          <Sider trigger={null} collapsible collapsed={collapsed}>
-            <SidebarMenu/>
+          <Sider trigger={null} collapsible collapsed={collapsed} className="main-sidebar">
+            <SidebarMenu />
           </Sider>
           <Content
             style={{
-              margin: '24px 16px',
+              margin: '10px',
               padding: 24,
               height: "100%",
               background: colorBgContainer,
               borderRadius: borderRadiusLG,
+              border: "1px solid #0958d9",
             }}
           >
             {props.content}
