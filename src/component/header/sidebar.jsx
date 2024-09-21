@@ -14,57 +14,57 @@ const sidebarMenuItems = [
         </Link>
       ),
     },
-    {
-      key: 'sub2',
-      icon: <AppstoreOutlined />,
-      label: (
-        <Link href="/dashboard/navigation-two">
-          Navigation Two
-        </Link>
-      ),
-    },
-    {
-      type: 'divider',
-    },
-    {
-      key: 'sub4',
-      icon: <SettingOutlined />,
-      label: 'Navigation Three',
-      children: [
-        {
-          key: '9',
-          label: (
-            <Link href="/option-9">
-              Option 9
-            </Link>
-          ),
-        },
-        {
-          key: '10',
-          label: (
-            <Link href="/option-10">
-              Option 10
-            </Link>
-          ),
-        },
-        {
-          key: '11',
-          label: (
-            <Link href="/option-11">
-              Option 11
-            </Link>
-          ),
-        },
-        {
-          key: '12',
-          label: (
-            <Link href="/option-12">
-              Option 12
-            </Link>
-          ),
-        },
-      ],
-    },
+    // {
+    //   key: 'sub2',
+    //   icon: <AppstoreOutlined />,
+    //   label: (
+    //     <Link href="/dashboard/navigation-two">
+    //       Navigation Two
+    //     </Link>
+    //   ),
+    // },
+    // {
+    //   type: 'divider',
+    // },
+    // {
+    //   key: 'sub4',
+    //   icon: <SettingOutlined />,
+    //   label: 'Navigation Three',
+    //   children: [
+    //     {
+    //       key: '9',
+    //       label: (
+    //         <Link href="/option-9">
+    //           Option 9
+    //         </Link>
+    //       ),
+    //     },
+    //     {
+    //       key: '10',
+    //       label: (
+    //         <Link href="/option-10">
+    //           Option 10
+    //         </Link>
+    //       ),
+    //     },
+    //     {
+    //       key: '11',
+    //       label: (
+    //         <Link href="/option-11">
+    //           Option 11
+    //         </Link>
+    //       ),
+    //     },
+    //     {
+    //       key: '12',
+    //       label: (
+    //         <Link href="/option-12">
+    //           Option 12
+    //         </Link>
+    //       ),
+    //     },
+    //   ],
+    // },
   ];
   // Sidebar Menu End
 

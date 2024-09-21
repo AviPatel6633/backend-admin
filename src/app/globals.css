@@ -4,3 +4,17 @@ body {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent
 }
+.error-message{
+    color: red;
+    font-size: 14px ;
+    line-height: 16px;
+    position: absolute;
+}
+@media (max-width: 900px) {
+    .error-message{
+        color: red;
+        font-size: 10px ;
+        line-height: 12px;
+        bottom: -30px;
+    }
+}

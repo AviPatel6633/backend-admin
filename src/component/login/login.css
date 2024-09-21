@@ -29,6 +29,7 @@
     }
 }
 
+
 .login-section span {
     position: relative;
     display: block;
@@ -46,13 +47,13 @@
 
 .login-section .signin {
     position: absolute;
-    width: 400px;
+    width: 500px;
     background: #222;
     z-index: 1000;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 20px;
     border-radius: 4px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 9);
 }
@@ -100,8 +101,9 @@
 
 .login-section .signin .content .form .inputBox label {
     position: absolute;
-    left: 0;
-    /* padding: 15px 10px; */
+    left: 5px;
+    top: 10px;
+    padding: 0;
     font-style: normal;
     color: #aaa;
     transition: 0.5s;

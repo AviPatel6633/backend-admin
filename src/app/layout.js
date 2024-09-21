@@ -4,6 +4,7 @@ import { Inter, Roboto_Mono } from 'next/font/google';
 import HeaderExport from "@/component/header/headerExport";
 import { Suspense } from 'react';
 import Loading from "./loading";
+import NavigateLoading from "@/component/preloader/navigateLoading";
 
 export const inter = Inter({
   subsets: ['latin'],
@@ -27,9 +28,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${inter.className} ${roboto_mono.className}`}>
         <Suspense fallback={<Loading />}>
+        <NavigateLoading>
           <HeaderExport>
-            {children}
+              {children}
           </HeaderExport>
+          </NavigateLoading>
         </Suspense>
       </body>
     </html>
