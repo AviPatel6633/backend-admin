@@ -107,3 +107,34 @@
         margin-right: 6px;
     }
 }
+
+.signout-modal .modal-content{
+    background-color: #001529;
+    color: #fff;
+}
+.signout-modal .modal-footer{
+    border-top: 1px solid #0957d761;
+}
+.signout-modal .signout-modal-btn{
+    background-color: #0957d7;
+    color: #fff;
+    border: 1px solid #0958d9;
+}
+.signout-modal .user-img{
+    height: 90px;
+    width: 90px;
+    border-radius: 10px;
+}
+.signout-modal  .modal-content h3{
+    font-size: 24px;
+    font-weight: 600px;
+    margin: 0;
+
+}
+.signout-modal  .modal-content h6{
+    font-size: 16px;
+    font-weight: 500px;
+}
+.signout-modal .signout-modal-btn:hover{
+    color: #7497ff;
+}

@@ -4,6 +4,20 @@ body {
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: transparent
 }
+.custom-menu-icon svg{
+    height: 30px;
+    width: 30px;
+    color: #757575;
+}
+.blue-color{
+    color: #0957d7 !important;
+}
+.red-color{
+    color: red !important;
+}
+.yellow-color{
+    color: yellow !important;
+}
 .error-message{
     color: red;
     font-size: 14px ;
