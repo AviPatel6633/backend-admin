@@ -19,8 +19,8 @@ export const roboto_mono = Roboto_Mono({
 });
 
 export const metadata = {
-  title: "Admin",
-  description: "By Avi Patel",
+  title: "Dashboard by Avi Patel",
+  description: "Next Js",
 };
 
 export default function RootLayout({ children }) {
