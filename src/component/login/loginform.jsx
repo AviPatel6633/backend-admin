@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import Link from 'next/link';
 import { useForm } from "react-hook-form"
 import { useRouter } from 'next/navigation'
+import axios from 'axios';
 
 const Loginform = () => {
     const router = useRouter()
@@ -14,7 +15,19 @@ const Loginform = () => {
 
     const onSubmit = (data) => {
         console.log(data);
-        router.push('/dashboard')
+        axios.post('http://localhost:4000/login', data, {
+            withCredentials: true, // Ensure cookies are sent with the request
+        })
+        .then(function (response) {
+            console.log(response);
+            // if (response.status === 200) {
+                router.push('/dashboard'); // Redirect to dashboard after successful login
+            // }
+        })
+        .catch(function (error) {
+            console.log(error);
+        });
+        // router.push('/dashboard')
     }
 
     const registerOptions = {
