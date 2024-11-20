@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import './header.css'
 import { MenuFoldOutlined, MenuUnfoldOutlined } from '@ant-design/icons';
@@ -9,15 +10,18 @@ import { Button, Layout, Menu, theme } from 'antd';
 import SidebarMenu from './sidebar';
 import User from "@/public/assets/images/user.jpg";
 import Image from 'next/image';
+import { clearToken } from '../../../utils/serverTokens';
 const { Header, Sider, Content } = Layout;
 
 const HeaderMain = (props) => {
+
   const router = useRouter();
   const [showSignout, setShowSignout] = useState(false);
 
   const handleClose = () => setShowSignout(false);
   const handleShow = () => setShowSignout(true);
   const SignOut = () => {
+    clearToken();
     setShowSignout(false);
     router.push("/")
   }
